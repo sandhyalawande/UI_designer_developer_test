@@ -51,8 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 90vh;
-  background: url(../images/header.png) top center;
+  height: 85vh;
+  background: url(../images/header.png) 0px 0px;
   background-size: cover;
   position: relative;
 }
@@ -425,13 +425,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #Our-story {
   background: #fff;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 #Our-story .Our-story-container .background {
-  min-height: 300px;
+ min-height: 180px;
   background: url(../images/our_story.png) center top no-repeat;
-  margin-bottom: 10px;
+  
 }
 
 #Our-story .Our-story-container .content {
@@ -463,7 +463,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #watch-our-story {
   background: linear-gradient(#30235fe3, #30235fe3), url(../images/vedio.png) center center;
   background-size: cover;
-  padding: 140px 0;
+  padding: 115px 0;
 }
 
 #watch-our-story .cta-title {
@@ -517,12 +517,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 #expertise {
   background: #fff;
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 30px 0 0px 0;
 }
 
 #expertise .box {
-  padding: 50px 20px;
-  margin-bottom: 50px;
+ /* padding: 50px 20px;
+  margin-bottom: 5px;*/
+  padding: 38px 15px;
+margin-bottom: 15px;
   text-align: center;  
   height: 200px;
   position: relative; 
@@ -688,18 +690,54 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Footer
 --------------------------------------------------------------*/
 
-
+@media (max-width: 320px)
+{
+    .footer-mobile
+  {
+      margin-left:0px !important;
+      text-align:center !important;
+  }
+   #footer
+  {
+      text-align:center !important;
+  }
+}
+@media (max-width: 480px)
+{
+    .footer-mobile
+  {
+      margin-left:0px !important;
+      text-align:center !important;
+  }
+   #footer
+  {
+      text-align:center !important;
+  }
+}
+@media (max-width: 768px)
+{
+    .footer-mobile
+  {
+      margin-left:0px !important;
+      text-align:center !important;
+  }
+   #footer
+  {
+      text-align:center !important;
+  }
+}
 @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
+  
 }
 #footer {
   background: linear-gradient(#30235fe3, #30235fe3), url(../images/footer.png) center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 40px 0;
   color: #fff;
   font-size: 14px;
 }
